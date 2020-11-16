@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.searchscale</groupId>
+  <artifactId>zk-cas-spinlock-tests</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>zk-cas-spinlock-tests</name>
+  
+  
+  <dependencies>
+                <dependency>
+                    <groupId>org.apache.curator</groupId>
+                    <artifactId>curator-x-async</artifactId>
+                    <version>4.0.1</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>org.apache.zookeeper</groupId>
+                            <artifactId>zookeeper</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+
+                <dependency>
+                    <groupId>org.apache.zookeeper</groupId>
+                    <artifactId>zookeeper</artifactId>
+                    <version>3.5.5</version>
+                </dependency>
+        
+				<dependency>
+				    <groupId>org.json</groupId>
+				    <artifactId>json</artifactId>
+				    <version>20200518</version>
+				</dependency>
+				
+				<dependency>
+				    <groupId>org.apache.solr</groupId>
+				    <artifactId>solr-test-framework</artifactId>
+				    <version>8.4.1</version>
+				</dependency>
+				
+  
+  </dependencies>
+</project>
